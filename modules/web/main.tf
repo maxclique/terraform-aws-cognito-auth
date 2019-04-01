@@ -26,6 +26,7 @@ provider "aws" {
   version = ">= 1.20.0, <= 2.2.0"
   alias   = "lambda"
   region  = "us-east-1"
+  profile = "${var.aws_profile}"
 }
 
 # -----------------------------------------------------------------------------
